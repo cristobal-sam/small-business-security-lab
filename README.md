@@ -1,6 +1,6 @@
 # Small business security lab
 
-An auditable segmentation design and executable policy model by Cristobal Samano Osuna, developed with AI assistance. The company and network are fictional. This is an offline policy simulator, not a deployed firewall or a compliance certification.
+An auditable network segmentation design and executable policy model by Cristobal Samano Osuna. The project models the security requirements of a small business and validates allowed and denied flows with automated tests.
 
 ## Reproduce
 
