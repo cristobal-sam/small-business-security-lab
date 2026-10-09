@@ -1,0 +1,12 @@
+{
+  "zones": ["staff", "guest", "servers", "management", "internet"],
+  "default": "deny",
+  "rules": [
+    {"id":"guest-web", "src":"guest", "dst":"internet", "protocol":"tcp", "ports":[80,443], "action":"allow"},
+    {"id":"staff-web", "src":"staff", "dst":"internet", "protocol":"tcp", "ports":[80,443], "action":"allow"},
+    {"id":"staff-app", "src":"staff", "dst":"servers", "protocol":"tcp", "ports":[443], "action":"allow"},
+    {"id":"admin-ssh", "src":"management", "dst":"servers", "protocol":"tcp", "ports":[22], "action":"allow"},
+    {"id":"staff-dns", "src":"staff", "dst":"servers", "protocol":"udp", "ports":[53], "action":"allow"},
+    {"id":"guest-dns", "src":"guest", "dst":"internet", "protocol":"udp", "ports":[53], "action":"allow"}
+  ]
+}
